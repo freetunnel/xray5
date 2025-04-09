@@ -33,8 +33,8 @@ install_xray() {
     touch /var/log/xray/access2.log
     touch /var/log/xray/error2.log
 
-    # Install Xray versi 1.8.2
-    bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u www-data --version 1.6.1
+    # Install Xray
+bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install
 }
 
 # Issue SSL certificate using acme.sh
